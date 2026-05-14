@@ -1,5 +1,24 @@
 # Training Scripts README
 
+## `run_all_competitors_country_level_single_layer_if_zscore.py`
+
+Purpose:
+
+- Evaluate the standalone `IF` and `Z-score` detector combinations on the same competitor-level scope-`mh` surface used by the final layered-detector run.
+- Reuse the same sampled minimum-history settings, synthetic anomaly injection protocol, competitor splits, and retained country-level Isolation Forest configurations as `run_all_competitors_country_level_layered_finalists.py`.
+- Keep the supplemental single-layer baseline results separate from the final layered run.
+
+What the script produces:
+
+- Row-level `injected_rows.parquet` and `predictions.parquet` files under `results/detector_combinations/all_competitors_all_countries_country_level_single_layer_if_zscore/scopes/`.
+- Compact thesis-metrics CSVs under `results/detector_combinations/all_competitors_all_countries_country_level_single_layer_if_zscore/analysis/thesis_metrics/`.
+
+Example:
+
+```powershell
+python research/training/scripts/run_all_competitors_country_level_single_layer_if_zscore.py
+```
+
 ## `analyze_layered_finalists_cross_country.py`
 
 Purpose:
