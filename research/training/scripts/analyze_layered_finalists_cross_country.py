@@ -63,17 +63,17 @@ COMBO_ORDER = [
 BALANCED_TOP_TWO_COMBOS = ["Sanity -> Z-score", "Sanity -> IF"]
 HIGH_RECALL_TOP_TWO_COMBOS = ["Sanity -> IF", "Sanity -> Z-score (>=5) -> IF"]
 COMBO_STYLES = {
-    "Sanity -> Z-score": {"marker": "o", "linestyle": "-", "label": "Sanity -> Z-score"},
-    "Sanity -> IF": {"marker": "s", "linestyle": "--", "label": "Sanity -> IF"},
+    "Sanity -> Z-score": {"marker": "o", "linestyle": "-", "label": "S-Z"},
+    "Sanity -> IF": {"marker": "s", "linestyle": "--", "label": "S-IF"},
     "Sanity -> Z-score (>=10) -> IF": {
         "marker": "^",
         "linestyle": "-.",
-        "label": "Sanity -> Z-score (>=10) -> IF",
+        "label": r"S-Z$_{10}$-IF",
     },
     "Sanity -> Z-score (>=5) -> IF": {
         "marker": "D",
         "linestyle": ":",
-        "label": "Sanity -> Z-score (>=5) -> IF",
+        "label": r"S-Z$_{5}$-IF",
     },
 }
 BALANCED_OUTPUT_BASENAME = "layered_finalist_mh_trends"
